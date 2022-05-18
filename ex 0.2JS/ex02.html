@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando JS</title>
+    <style>
+        body{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey brother!</h1>
+    <script>
+        const team = window.prompt('Qual nome da sua Equipe?');
+        alert(`Equipe selecionada : ${team}`);
+        const gols = Number(prompt('Quantos gols tem no "Total" da equipe selecionada?'));
+        const vitorias = Number(prompt('Quantas vitorias no "Total" tem a equipe selecionada?'));
+        console.log(typeof gols);
+        const resultado = (gols + vitorias) / 2; // Calculo dando resposta errada(Resultado da metade)
+        alert(`A media de gols e vitorias da equipe selecionada é de: ${resultado.toFixed(2)}`)
+    </script>
+</body>
+</html>
