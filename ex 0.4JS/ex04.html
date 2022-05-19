@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o Dom</title>
+</head>
+<body>
+    <h1>Iniciando o DOM</h1>
+    <p>Um texto aleatorio Dorestska</p>
+    <p>Usando uma forma diferente do <strong>DOM</strong> no JavaScript</p>
+    <div id="divi">clique aqui</div>
+    <script>
+        document.write(window.document.URL);
+        const corpo = document.body;
+        const titulo = document.getElementsByTagName('h1')[0]
+        const div = document.getElementById('divi')
+        titulo.innerText = ('Modificando o titulo pelo DOM')
+        titulo.style.fontWeight = 'normal';
+        titulo.style.color = 'red';
+        corpo.style.background = 'black'
+        corpo.style.color = 'white';
+        div.style.background = 'blue'
+        div.innerText = 'Loading...';
+    </script>
+</body>
+</html>
