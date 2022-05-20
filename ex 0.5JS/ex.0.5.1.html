@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+    <style>
+        input {
+            font-size: 1.1em;
+            width: 150px;
+        }
+
+        #buton {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        #res {
+            font-size: 1.7em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somador de numeros</h1>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="SomeKente" onclick="somar()" id="buton">
+    <div id="res"></div>
+
+    <script>
+        function somar() {
+            const num1 = document.querySelector('#num1')
+            const num2 = document.querySelector('#num2')
+            const texto = document.querySelector('#res')
+            const soma1 = Number(num1.value)
+            const soma2 = Number(num2.value)
+            const resultado = soma1 + soma2;
+            texto.innerHTML = `O resultado da soma de ${soma1} e ${soma2} é: <strong>${resultado}</strong>`;
+        }
+    </script>
+</body>
+</html>

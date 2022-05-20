@@ -10,7 +10,7 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     -var <- variavel antiga que pode ser redeclarada, trocar seus valores e não possui restrições para acessa-las dentro de algum bloco, porém existe certos erros que acontecem dentro de escorpos do codigo
     Ex:
     */
-   
+
    /* const valor = 0;
    const nome = 'Osvaldo';
    let strike = 20;
@@ -114,3 +114,29 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
         -variavel.onsubmit = <- Comando para ativar uma acao da variavel
         -variavel.addEventListener(); <- Comando para ativar uma acao da variavel(Simples)
 */
+
+/* 'EVENTOS DO DOM E COMANDOS'
+    -Site de diversos codigos para interações : https://developer.mozilla.org/pt-BR/docs/Web/Events
+    Ou : https://www.w3schools.com/jsref/dom_obj_event.asp
+    
+    function <- Comando para criar um bloco de funções;
+    function nome() {} <- Nome qualquer que executa sua função fora do bloco;
+    function nome '()' <- É possivel colocar algum parametro para que a função receba e use dentro dela;
+    Ex:*/
+
+    {/* <div id="area" onclick="clicar()">
+        Loading...
+    </div>
+ 
+        function clicar() {
+            const local = document.getElementById('area');
+            local.innerText = 'Terminado!';
+            local.style.backgroundColor = 'red';
+        } */}
+
+    /* variavel.addEventListener() <- Comando simples e apenas na parte Javascript que faz a mesma função de escutar um evento em tal elemento
+    Ex: De : <div id="area" onclick="clicar()">  
+        Para : area.addEventListener('click', clicar) <- Entre '' colocar o comando do evento e depois um nome qualquer referente ao evento.
+        
+    input <- Existe varios tipos de inputs, mais comum são (Button, number, text...)
+    */
