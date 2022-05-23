@@ -140,3 +140,16 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
         
     input <- Existe varios tipos de inputs, mais comum são (Button, number, text...)
     */
+
+/* ESTRUTURA SWITCH/CASE(Repita-até)
+    Ex :
+    switch (variavel-checavel) { <- Essa estrutura só funciona se as condições percorrerem a numeração(1, 2, 3, 4...)
+	case 1:
+	variavel = 'valor';
+	break; <- Comando para finalizar a estrutura caso o valor seja verdadeiro
+	case 2: 
+	variavel = 'valor';
+	break; <- Comando para finalizar a estrutura caso o valor seja verdadeiro
+
+    default <- pode ser colocado como a ultima condição caso não atenda o resto dos 'cases'
+} */

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigrantes</title>
+</head>
+<body>
+    <h1>Identifique-se!</h1>
+    <p>De que país você veio? (País Local : Brasil)</p>
+    <p>Identifique sua nacionalidade :<input type="text" id="pais"></p>
+    <input type="button" value="Confirmar" id="confirm">
+    <h3 id="res"></h3>
+
+    <script>
+        const localidade = document.getElementById('pais')
+        const confirmar = document.getElementById('confirm')
+
+        confirmar.addEventListener('click', enviar)
+        
+        function enviar () {
+            const resultado = document.querySelector('#res')
+            const nacionalidade = localidade.value;
+            if (nacionalidade !== 'Brasil') {
+                resultado.innerHTML = `<p>Você é <strong>imigrante</strong>! Cai fora!</p>`
+                resultado.innerHTML += `<p>Não aceitamos estrangeiros!</p>`
+            }
+            else {  
+                resultado.innerHTML = `Você é do <strong>Brazuka</strong>! Welcome.`
+            }               
+        }
+
+</script>
+</body>
+</html>

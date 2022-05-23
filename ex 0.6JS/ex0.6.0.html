@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Verifique a velocidade em determinado local e informe sua placa.</p>
+    <p>Placa do veiculo : <input type="text" id="placa"></p>
+    <p>Velocidade do veiculo : <input type="number" id="velo">Km/h</p>
+    <p>Local : <input type="text" id="local"></p>
+    <div><input type="button" value="Verificar" id="confirm"></div>
+    <h3 id="res"></h3>
+
+    <script>
+        const placa = document.getElementById('placa')
+        const velocidade = document.getElementById('velo')
+        const local = document.getElementById('local')
+        const confirmar = document.getElementById('confirm')
+
+        confirmar.addEventListener('click', enviar)
+        
+        function enviar () {
+            const resultado = document.querySelector('#res')
+            const veiculoP = placa.value;
+            const VeloFinal = Number(velocidade.value)
+            const LocalFinal = local.value;
+            resultado.innerHTML = `Velocidade do veiculo é de : ${VeloFinal}`
+            resultado.innerHTML += `<p>Placa do veiculo : ${veiculoP}</p>`
+            resultado.innerHTML += `<p>Local : ${LocalFinal}</p>`
+
+        }
+
+</script>
+</body>
+</html>
