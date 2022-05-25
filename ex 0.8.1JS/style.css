@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(123, 151, 23);
+    font : normal 16px arial;
+    text-align: center;
+
+}
+
+header {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px black;
+    padding: 10px 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+#buton {
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+#buton:hover {
+    background-color: rgb(93, 158, 93);
+}
+
+footer {
+    font-style: italic;
+    margin-top: 10px;
+
+}

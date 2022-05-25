@@ -152,4 +152,15 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
 	break; <- Comando para finalizar a estrutura caso o valor seja verdadeiro
 
     default <- pode ser colocado como a ultima condição caso não atenda o resto dos 'cases'
-} */
+} 
+*/
+
+/* 'Estrutura While/DO-While'
+    - A estrurua while é um laço padrão das estruturas de repetições
+    - O Do-While é o laço inverso.
+    Ex:
+    do{            <- O laço executa primeiro os comandos e depois testa a condição
+        *comandos*
+        *comandos*
+    } while (condição)
+     */
