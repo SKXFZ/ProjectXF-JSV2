@@ -67,7 +67,8 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
      */
     /* 'Processo Ternario'
          Sintaxe: (condição) ? 'Valor verdadeiro' : 'valor falso'
-        - ? <- Verdadeiro : <- Falso
+        - ? <- Verdadeiro 
+        - : <- Falso
         Ex: */
 
         /* let numero = 50;
