@@ -123,6 +123,8 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     function <- Comando para criar um bloco de funções;
     function nome() {} <- Nome qualquer que executa sua função fora do bloco;
     function nome '()' <- É possivel colocar algum parametro para que a função receba e use dentro dela;
+    *Se caso a sua função precisar retornar algum valor, use o comando no final da função "return;". É possivel tambem colocar uma expressão no "return"
+    Ex: return x + y;
     Ex:*/
 
     {/* <div id="area" onclick="clicar()">
@@ -141,6 +143,28 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
         
     input <- Existe varios tipos de inputs, mais comum são (Button, number, text...)
     */
+
+    /* Para mandar um valor para o parametro da função, fica assim:
+    Ex: */
+
+    /* function contador (n) {
+        numeros = []
+        for (let i = 0; i < n; i++) {
+            numeros.push(i)
+        }
+        return numeros;
+    }
+    const valor = contador(5) // <- valor que será recebido no parametro da função
+    console.log(valor) */
+    /* -Dependendo do valor que será recebido no parametro, é possivel indicar um valor diretamente no parametro caso não receba nada
+    Ex: 
+
+    function soma (n1, n2=0) <- Coloque um valor qualquer no parametro{} 
+    const valor = soma(2) <- Se o valor que será enviado estiver só um numero...*/
+
+    /* É possivel colocar uma função diretamente em variavel
+    Ex: 
+    Const valor = function nome <- Não é necessario indicar um nome para a função (parametro) {}*/
 
 /* ESTRUTURA SWITCH/CASE(Repita-até)
     Ex :
@@ -165,3 +189,41 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
         *comandos*
     } while (condição)
      */
+
+/* 'Arrays ou Vetor' 
+    -Para declarar um vetor é só colocar "[]";
+    Ex : const numeros = [2, 4, 10] ou [];
+    -Para declarar um novo valor em tal posição coloque numeros[posição ou indice] = valor desejado;
+    Ex : numeros[1] = 5
+        novo valor = numeros [2, 5, 10]
+
+    -Para colocar um novo valor no final do vetor,
+    coloque o atributo "numeros.push(valor)"
+    Ex: numeros.push(5);
+        novo valor = numeros[2, 5, 10, 5]
+    
+    Para saber o comprimento ou quantos elementos o array possui, coloque o comando "numeros.length";
+    Para colocar as posições em ordem crescente no array, coloque o comando "numeros.sort();"
+    Ex: numeros.sort();
+        novo valor = numeros[10, 2, 5, 5]
+    *O comando ".sort" é um pouco bugado, procure saber mais sobre*
+
+    -É possivel e recomendado usar as estruturas de repetições para acessar com mais facilidade os indices dos arrays, objetos etc
+    *Uma estrutura de repetição simples que só serve apenas para arrays e objetos é o "in"
+    Ex:   */
+
+    /* const numeros = [2, 5, 3, 15]
+    for (let i in numeros) {
+        console.log(numeros[i])
+    } */
+
+    /* Para saber se existe tal valor na variavel que contém array, coloque o seguinte comando numeros.indexOf(valor)
+    Ex: 
+    */
+
+    /* const numeros = [2, 5, 1, 6, 7]
+    console.log(numeros.indexOf(5))
+    console.log(numeros.indexOf(10)) 
+    *Se aparecer o "-1" quer dizer que o valor não foi encontrado* */
+
+    
