@@ -226,4 +226,32 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     console.log(numeros.indexOf(10)) 
     *Se aparecer o "-1" quer dizer que o valor não foi encontrado* */
 
+/* 'OBJETOS' 
+    -Para declarar um objeto coloque "{}" *Cheque o exercicio 1.1.0JS*
+    Ex : 
+        const pessoa1 = {
+        Nome: 'Maira',
+        Sobrenome: 'Minanda',
+        idade: 24
+        };
+    -Console.log(pessoa1.nome *sobrenome ou idade*); <- Para acessar um determinado atributo do objeto
+    *This.nome* <- Ele acessa diretamente a variavel do objeto declarado */
+
+    /* Ex:
+    const jogador1 = {nome: 'Shuya', idade: 23, posicao: 'Atacante', envelheceu(id){
+        console.log('Shuya está ficando aposentado!')
+        this.idade += id
+    }}
+    jogador1.envelheceu(2);
+    console.log(jogador1.nome)
+    console.log(jogador1.posicao)
+    console.log(jogador1.idade) */
+
+    /* PS: Tambem pode-se criar um função para o objeto acessar-la 
+    Ex: function criarpessoa (Nome, Sobrenome, idade) { <- Atribuição dos parametros
+    return {nome, sobrenome, idade}; <- Valores que serão retornados
+    }
+    const pessoa1 = criarpessoa('Joao', 'Paulo' 25); <- Enviar os valores para o parametro da function
+
+    console.log(pessoa1.nome); Exibir na tela o comando */
     
