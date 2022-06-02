@@ -197,10 +197,15 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     Ex : numeros[1] = 5
         novo valor = numeros [2, 5, 10]
 
+    -Para colocar um novo valor no inicio do vetor, coloque o atributo "numeros.
+    unshift(valor)"
+    -Para eliminar o ultimo valor do array, coloque "numeros.pop" ou "numeros.shift" para remover do primeiro
     -Para colocar um novo valor no final do vetor,
     coloque o atributo "numeros.push(valor)"
     Ex: numeros.push(5);
         novo valor = numeros[2, 5, 10, 5]
+        numeros.unshift(7)
+        novo valor = numeros[7, 2, 5, 10, 5]
     
     Para saber o comprimento ou quantos elementos o array possui, coloque o comando "numeros.length";
     Para colocar as posições em ordem crescente no array, coloque o comando "numeros.sort();"
