@@ -214,7 +214,7 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     *O comando ".sort" é um pouco bugado, procure saber mais sobre*
 
     -É possivel e recomendado usar as estruturas de repetições para acessar com mais facilidade os indices dos arrays, objetos etc
-    *Uma estrutura de repetição simples que só serve apenas para arrays e objetos é o "in"
+    *Estrutura de repetição "In" <- Ele retorna os indices do arrays ou objetos*
     Ex:   */
 
     /* const numeros = [2, 5, 3, 15]
@@ -230,6 +230,25 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     console.log(numeros.indexOf(5))
     console.log(numeros.indexOf(10)) 
     *Se aparecer o "-1" quer dizer que o valor não foi encontrado* */
+
+    /* *Estrutura de repetição "of" <- Ele retorna o valor do array (Não é bom usar essa estrutura em objetos)
+    Ex: */
+
+    /* const carroFord = {
+        motor: 'V8',
+        pneu: 'Pirelli',
+        combustivel: 'Alcool'
+    }
+
+    for (let i of carroFord) {  // Para objetos, essa estrutura dá erro
+        console.log(carroFord[i])
+    } */
+
+    /* const carroFord = ['V8', 'Pirelli', 'Alcool']
+    for (let i of carroFord) { // Modo certo para usar o "of" em arrays
+        console.log(i)
+    } */
+
 
 /* 'OBJETOS' 
     -Para declarar um objeto coloque "{}" *Cheque o exercicio 1.1.0JS*
@@ -259,4 +278,5 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     const pessoa1 = criarpessoa('Joao', 'Paulo' 25); <- Enviar os valores para o parametro da function
 
     console.log(pessoa1.nome); Exibir na tela o comando */
+
     
