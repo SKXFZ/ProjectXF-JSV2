@@ -166,6 +166,30 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
     Ex: 
     Const valor = function nome <- Não é necessario indicar um nome para a função (parametro) {}*/
 
+    /* 'Função anonima/ArrowFunction/Function executa outra function' 
+        -Função anonima é declarada atraves de uma variavel, tornando-o um objeto primario
+        Ex:*/
+
+        /* const motor = function() {
+            let valor = 3 * 2 + 2;
+            console.log(valor)
+        }
+        motor()
+
+        // - Função recebendo outra função e fazer ela executar a sua função
+            function engatarEngine(funcion) {
+                console.log("Executando outra funcao recebida")
+                funcion()
+            }
+            engatarEngine(motor) */
+        
+    /* -Para declarar uma arrow function coloque o "=>", ela possui algumas     diferenças do que as outras declarações de function
+        Ex: */
+        /* const fletcher = () => {
+            console.log("Construindo uma arrowFunction")
+        }
+        fletcher(); */
+
 /* ESTRUTURA SWITCH/CASE(Repita-até)
     Ex :
     switch (variavel-checavel) { <- Essa estrutura só funciona se as condições percorrerem a numeração(1, 2, 3, 4...)
