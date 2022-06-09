@@ -189,6 +189,19 @@ Visual studio watch in chrome(Navegador Chorme) <- Serve o que estiver sendo mod
             console.log("Construindo uma arrowFunction")
         }
         fletcher(); */
+    
+    /* 'FUNÇÕES AUTO INVOCADAS'(IIFE)
+        -Para declarar uma função auto-invocada, basta colocar a 'function' dentro de '()' e terminar com o mesmo
+        -Ela serve para não poluir o escopo global e deixar dentro de uma função automatica
+        Ex: */
+
+        /* (function() { // <- É possivel colocar parametros dentro dos '()' da função
+            const lula = 'president'
+            const titulo = 'eleitor'
+            console.log('Lulinha: ' + lula + ' Pessoa: ' + titulo)
+        })() // <- Nos '()' é possivel colocar os argumentos para o parametro da função */
+            // NÃO ESQUEÇA DE COLOCAR "()" NO FINAL DA FUNÇÃO AUTO-INVOCADA!
+
 
 /* ESTRUTURA SWITCH/CASE(Repita-até)
     Ex :
